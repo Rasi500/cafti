@@ -27,6 +27,7 @@
 <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
     <header>
         <figure>
@@ -39,12 +40,16 @@
     <main>
         <h1>Book a Table</h1>
         <audio loop controls>
-            <source src=" happy.aac" typ="audio/acc">
+            <source src="happy.aac" typ="audio/aac">
         </audio>
+        <br>
+
+        <iframe src="placeholder.jpg" width="320" sandbox title="Reservation placeholder"
+            allow="payment 'none';camera 'none';microphone'none'"></iframe><br>
 
         <form>
             <div>
-                <label for=booking_date>Booking Date</label><br>
+                <label for=booking_date>Booking Date</label>
 
 
                 <input type="date" id="booking_date" name="booking_date">
@@ -78,7 +83,7 @@
             </fieldset>
             <button type="submit">Book Table</button>
             <div>
-                <br>
+
                 <label for="username">Username</label>
                 <input type="text" id="username" required minlength="2">
 
